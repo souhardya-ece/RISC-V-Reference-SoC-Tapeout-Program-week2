@@ -18,6 +18,9 @@ It is a beginner friendly less complex SoC as it have Reduced Complexity,Core Le
 
 ### Types of SoC:- There are three types of SOC these are as follows 
 Microcontroller-based SoC,Microprocessor-based SoC,Application-Specific SoC.
+### The role of functional modelling before RTL and physical design stages
+Its role is to validate system behavior and architecture at a high level, without worrying about hardware implementation details.
+
 
 
 
