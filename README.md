@@ -16,8 +16,8 @@ Some of salient features of SoC are it is Space Saving,Energy Efficient,High Per
 ### Why BabySoC is a simplified model for learning SoC concepts. 
 It is a beginner friendly less complex SoC as it have Reduced Complexity,Core Learning Focus,Pedagogical Value,Scalability,Hands-On Feasibility. It can also include the PLL and DAC and RVMYTH (RISC-V CPU).
 
-### Types of SoC:- There are three types of SOC these are as follows Microcontroller-based SoC,
-Microprocessor-based SoC,Application-Specific SoC.
+### Types of SoC:- There are three types of SOC these are as follows 
+Microcontroller-based SoC,Microprocessor-based SoC,Application-Specific SoC.
 
 
 
