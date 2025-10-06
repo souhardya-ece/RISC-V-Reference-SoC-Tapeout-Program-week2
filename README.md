@@ -25,6 +25,40 @@ Its role is to validate system behavior and architecture at a high level, withou
 
 
 ## Lab (Hands-on Functional Modelling)
+### To convert rvmyth.tlv to rvmyth.v
+```
+sudo apt update
+
+sudo apt install python3-venv python3-pip
+
+
+cd ~/VLSI/VSDBabySoC/
+
+python3 -m venv sp_env
+
+source sp_env/bin/activate
+
+pip install pyyaml click sandpiper-saas
+
+sandpiper-saas -i ./src/module/*.tlv -o rvmyth.v --bestsv --noline -p verilog --outdir ./src/module/
+```
+### To activate or deactivate 
+```
+source sp_env/bin/activate
+deactivate
+```
+First activate the environment 
+```
+cd VLSI
+cd VSDBabySoC
+mkdir -p output/pre_synth_sim
+cd
+iverilog -o /home/souhardyab/VLSI/VSDBabySoC/output/pre_synth_sim/pre_synth_sim.out -DPRE_SYNTH_SIM -I /home/souhardyab/VLSI/VSDBabySoC/src/include -I /home/souhardyab/VLSI/VSDBabySoC/src/module /home/souhardyab/VLSI/VSDBabySoC/src/module/testbench.v
+cd VLSI
+cd VSDBabySoC/output/pre_synth_sim
+./pre_synth_sim.out
+gtkwave pre_synth_sim.vcd
+```
 In this wavefrom we analyze the reset operation , clocking , dataflow between modules .
 ### Reset operation 
 Reset is observed low at the beginning of the simulation.After that, it goes high and stays high. This indicates an active-low reset.
