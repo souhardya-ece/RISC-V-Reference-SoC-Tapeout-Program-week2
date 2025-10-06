@@ -21,7 +21,7 @@ Microcontroller-based SoC,Microprocessor-based SoC,Application-Specific SoC.
 ### The role of functional modelling before RTL and physical design stages
 Its role is to validate system behavior and architecture at a high level, without worrying about hardware implementation details.
 
-  ![image alt](https://github.com/souhardya-ece/RISC-V-Reference-SoC-Tapeout-Program-week2/blob/main/Images/OUT.png)
+  ![image alt](https://github.com/souhardya-ece/RISC-V-Reference-SoC-Tapeout-Program-week2/blob/main/Images/SOC.png)
 
 
 ## Lab (Hands-on Functional Modelling)
@@ -71,7 +71,7 @@ OUT:-Stays constant at 0.
 VREFH / VREFL:-Constant at 3.3V (high) and 0V (low).
 Dataflow:-REF (reference clock) drives the Phase-Frequency Detector.PFD output would normally control the Charge Pump (ENb_CP) and Loop Filter.The Loop Filter drives the VCO (ENb_VCO).VCO_IN is the oscillator output that feeds back to the divider and OUT.Since both ENb signals are high.
 
-![image alt](https://github.com/souhardya-ece/RISC-V-Reference-SoC-Tapeout-Program-week2/blob/main/Images/Output.png)
+![image alt](https://github.com/souhardya-ece/RISC-V-Reference-SoC-Tapeout-Program-week2/blob/main/Images/OUT.png)
 
 
 
