@@ -21,7 +21,7 @@ Microcontroller-based SoC,Microprocessor-based SoC,Application-Specific SoC.
 ### The role of functional modelling before RTL and physical design stages
 Its role is to validate system behavior and architecture at a high level, without worrying about hardware implementation details.
 
-  ![image alt](https://github.com/souhardya-ece/RISC-V-Reference-SoC-Tapeout-Program-week2/blob/main/Images/SOC.png)
+  ![image alt](https://github.com/souhardya-ece/RISC-V-Reference-SoC-Tapeout-Program-week2/blob/main/Images/OUT.png)
 
 
 ## Lab (Hands-on Functional Modelling)
