@@ -52,12 +52,11 @@ First activate the environment
 cd VLSI
 cd VSDBabySoC
 mkdir -p output/pre_synth_sim
-cd
-iverilog -o /home/souhardyab/VLSI/VSDBabySoC/output/pre_synth_sim/pre_synth_sim.out -DPRE_SYNTH_SIM -I /home/souhardyab/VLSI/VSDBabySoC/src/include -I /home/souhardyab/VLSI/VSDBabySoC/src/module /home/souhardyab/VLSI/VSDBabySoC/src/module/testbench.v
-cd VLSI
-cd VSDBabySoC/output/pre_synth_sim
+cd /VLSI/VSDBabySoC
+iverilog -o output/pre_synth_sim/pre_synth_sim.out -DPRE_SYNTH_SIM -I src/include -I src/module src/module/testbench.v
+cd /output/pre_synth_sim
 ./pre_synth_sim.out
-gtkwave pre_synth_sim.vcd
+ gtkwave pre_synth_sim.vcd
 ```
 In this wavefrom we analyze the reset operation , clocking , dataflow between modules .
 ### Reset operation 
@@ -71,7 +70,7 @@ OUT:-Stays constant at 0.
 VREFH / VREFL:-Constant at 3.3V (high) and 0V (low).
 Dataflow:-REF (reference clock) drives the Phase-Frequency Detector.PFD output would normally control the Charge Pump (ENb_CP) and Loop Filter.The Loop Filter drives the VCO (ENb_VCO).VCO_IN is the oscillator output that feeds back to the divider and OUT.Since both ENb signals are high.
 
-![image alt](https://github.com/souhardya-ece/RISC-V-Reference-SoC-Tapeout-Program-week2/blob/main/Images/OUT.png)
+![image alt](https://github.com/souhardya-ece/RISC-V-Reference-SoC-Tapeout-Program-week2/blob/main/Images/OUTPUT.png)
 
 
 
